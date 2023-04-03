@@ -4,6 +4,7 @@ variable "domain_records" {
     name     = string,
     data     = string,
     type     = string,
-    ttl      = number
+    ttl      = optional(number),
+    priority = optional(number)
   }))
 }
